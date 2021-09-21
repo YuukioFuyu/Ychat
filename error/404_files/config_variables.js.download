@@ -1,0 +1,60 @@
+var config = {
+	windowWidth : window.innerWidth,
+	banner: {
+		lFollowX : 0,
+		lFollowY : 0,
+		lMouseX : 0,
+		lMouseY : 0,
+		bannerX : 0,
+		bannerY : 0,
+		bannerZ : 0,
+		friction : 1 / 30,
+	},
+	home: {
+		current_homepage_section: "",
+		next_homepage_section: "",
+	},
+	menu: {
+		staticMenuTitle : '',
+		mobileMenuTitle: '',
+	},
+	blogs: {},
+	case_study: {},
+	popup: {
+		case_study_popup : 0,
+		casestudyPopupClass: '.open_caseStudyPopup',
+		csLink : '',
+		case_study_click_type : '',
+		cookieSet : false,
+		cookieSetBlogs : false,
+	},
+	testing : {
+		expertise_slider_autoplay : true,
+		last_expertise_count: 1,
+		present_expertise_count: 1,
+		expertise_count: null,
+		random_expertise_count: 1,
+		expertise_background: 1,
+		random_expertise_element: 1
+	},
+	consumerInternet: {
+		defaultElement : null
+	},
+	insurtech: {
+		slider: null,
+		sliderPrevIcon: null,
+		sliderNextIcon: null,
+		carousalContent: null,
+		carousalContentWidth: 0,
+		carousalContentElements: 0,
+		sliderActiveIndex: 0,
+		sliderAutoplay :true
+	},
+	microsite:{
+		webinar: {
+			dateGMT: "February 13 2020 06:00:00 GMT",
+			dateIST: "February 19 2020 10:00:00 GMT",
+			countDownDate: "February 13 2020 06:00:00 GMT"
+		}
+	}
+};

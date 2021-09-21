@@ -1,0 +1,320 @@
+/*
+ * @package AJAX_Chat
+ * @author ManOnDaMoon
+ */
+@import url('global.css');
+@import url('fonts.css');
+@import url('print.css');
+@import url('custom.css');
+
+/* Main Buttons Submit */
+#content #submitButton {
+	font: 12pt Calibri, 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: white;
+	font-weight: bold;
+	background: #e68c17;
+	border: 3px solid White;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	text-align: center;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-khtml-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	cursor: pointer;
+	height: 33px;
+	background-color: #7289da;
+	padding: 0 10px 0 10px;
+}
+/* Main Buttons Login */
+#loginForm #loginButton {
+	font: 14pt Calibri, 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: white;
+	font-weight: bold;
+	background: #e68c17;
+	border: 3px solid White;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	text-align: center;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-khtml-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	cursor: pointer;
+	height: 33px;
+	background-color: #7289da;
+	padding: 0 100px 0 100px;
+}
+/* Main Buttons Logout */
+#content #logoutButton {
+	font: 12pt Calibri, 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: white;
+	font-weight: bold;
+	background: #e68c17;
+	border: 3px solid White;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-khtml-border-radius: 8px;
+	text-align: center;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	-khtml-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	cursor: pointer;
+	height: 33px;
+	background-color: #FF0000;
+	padding: 0 10px 0 10px;
+}
+#content #logoutButton:hover,#content #submitButton:hover,#loginForm #loginButton:hover {
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	-khtml-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	position: relative;
+	top: 2px;
+}
+
+/* BBCode Buttons */
+#content #bbCodeContainer input {
+	font-style: normal;
+	font-size: 16px;
+	font-family: Calibri, 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #99aab5;
+	background: rgb(44, 47, 51);
+	padding: 0px 10px;
+	border: 1px solid rgb(221, 221, 235);
+	border-top-color: rgb(255, 255, 255);
+	border-bottom-color: rgb(179, 179, 189);
+	border-radius: 10px;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	text-align: center;
+	box-shadow: 0px 1px 4px 0px rgb(200, 200, 210);
+	-webkit-box-shadow: 0px 1px 4px 0px rgb(200, 200, 210);
+	-moz-box-shadow: 0px 1px 4px 0px rgb(200, 200, 210);
+	-khtml-box-shadow: 0px 1px 4px 0px rgb(200, 200, 210);
+	/*text-shadow: 0 0 0 transparent, 0px -1px 2px white;*/
+	outline: none;
+	line-height: 23px;
+	display: inline-block;
+	cursor: pointer;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	height: 30px;
+}
+#content #bbCodeContainer input:hover {
+	color: black;
+	text-decoration: none;
+	background-color: rgb(114, 137, 218);
+	border-color: rgb(255, 255, 200);
+	border-top-color: white;
+	border-bottom-color: rgb(190, 190, 170);
+}
+#content textarea {
+	font-size: 20px;
+	font-family: Calibri, 'Trebuchet MS', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	background-color: rgb(35, 39, 42);
+	border-width: 1px;
+	border-style: solid;
+	border-top-color: rgb(192, 192, 192);
+	border-right-color: rgb(233, 233, 233);
+	border-bottom-color: rgb(233, 233, 233);
+	border-left-color: rgb(192, 192, 192);
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	outline: 0;
+}
+#content textarea:focus {
+	background: rgb(44, 47, 51);
+	border-top-color: rgb(114, 137, 218);
+	border-bottom-color: rgb(114, 137, 218);
+}
+#content select {
+	background-color: #000000;
+	color: #ffffff;
+	border: 1px solid #a5cae4;
+}
+#content select {
+	background-color: #000000;
+	color: #ffffff;	
+	border: 1px solid #a5cae4;
+}
+#content select:focus {
+	background: rgb(0, 0, 0);
+	border-top-color: rgb(150, 150, 150);
+	border-bottom-color: rgb(230, 230, 230);
+}
+#content select:focus {
+	background: rgb(0, 0, 0);
+	border-top-color: rgb(150, 150, 150);
+	border-bottom-color: rgb(230, 230, 230);
+}
+#loginForm select {
+	background-color: #000000;
+	color: #ffffff;
+	border: 1px solid #a5cae4;
+	padding: 11px 10px 9px;
+}
+#loginForm input {
+	font-size: 20px;
+	background-color: #fff;
+	color: #555;	
+	border: 1px solid #a5cae4;
+	padding: 15px 25px 6px 10px;
+}
+#loginForm select:focus {
+	background: rgb(0, 0, 0);
+	border-top-color: rgb(150, 150, 150);
+	border-bottom-color: rgb(230, 230, 230);
+}
+#loginForm input:focus {
+	background: rgb(255, 255, 255);
+	border-top-color: rgb(150, 150, 150);
+	border-bottom-color: rgb(230, 230, 230);
+}
+
+/* Status Icon */
+#content #statusIconContainer {
+	background: url('../img/loading-sprite.png') no-repeat 0px 0px; 
+}
+#content #statusIconContainer.waiting {
+	background-position: 0px -22px;	
+}
+#content #statusIconContainer.retrying {
+	background-position: 0px -44px;
+}
+
+/* Other Theme Elements */
+.ajax-chat {
+	background-image: url(../img/null.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #000000;
+}
+.ajax-chat h1, .ajax-chat a {
+	color: #99aab5;
+}
+#loginContent #errorContainer {
+	color: red;
+}
+#content {
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 14px;
+}
+#content #headline {
+	color:#F7F7FF;
+	background:#1a1a1a;
+}
+#content #copyright {
+	color: #F7F7FF;
+}
+#content #copyrightfont-size: 0.8em; {
+	font-style: italic;
+	font-size: 0.8em;
+}
+#content #chatList,#content #colorCodesContainer {
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #a5cae4;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+}
+#content #onlineListContainer,#content #helpContainer,#content #settingsContainer, #content #reportContainer {
+	background-color: rgb(0, 0, 0);
+	border: 1px solid #a5cae4;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+}
+.ajax-chat .popup {
+	background-color:#FFF;
+	border: 1px solid #ababab;
+	box-shadow: 2px 2px 2px #777;
+}
+#content #chatList .rowOdd.private {
+	background-color:#333300;
+}
+#content #chatList .rowEven.private {
+	background-color:#333300;
+}
+#content #onlineListContainer #onlineList, #content #helpContainer #helpList, #content #settingsContainer #settingsList, #content #reportContainer #reportList {
+	padding-top: 5px;	
+}
+#content #bbCodeContainer,#content #emoticonsContainer {
+	background-color: rgb(0, 0, 0);
+	padding: 0px;
+}
+#content #colorCodesContainer a {
+	border-color: #a5cae4;
+}
+#content #optionsContainer input {
+	background-color: transparent;
+}
+#content .rowEven {
+	background: #000000;
+}
+#content .rowOdd {
+	background-color: #000000;
+}
+#content .guest {
+	color: gray;
+}
+#content .user {
+	color: #ffd700;
+}
+#content .customUser {
+	color: #e68c17;
+}
+#content .moderator {
+	color: #00AA00;
+}
+#content .admin, #content .chatBotErrorMessage {
+	color: red;
+}
+#content .chatBot {
+	color: #7289da;
+}
+#content #chatList a {
+	color: #60A0DC;
+}
+#content #chatList .deleteSelected {
+	border-color: red;
+}
+#content #onlineListContainer h3,#content #helpContainer h3,#content #settingsContainer h3,#content #reportContainer h3 {
+	font-size: 12px;
+	background: #4e9a27;
+	color: #e9f34b;
+	border-bottom: 1px solid #f9bc6d;
+}
+#content #chatList .report {
+	display:block;
+	float:right;
+	width:10px;
+	height:10px;
+	margin-top:2px;
+	margin-left:5px;
+	background:url('../img/report.gif') 0 0 no-repeat;
+}
+#content #chatList .report:hover {
+	background-position:0 -10px;;
+}
